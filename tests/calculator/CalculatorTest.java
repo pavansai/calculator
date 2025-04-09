@@ -24,9 +24,9 @@ public class CalculatorTest {
 
     @Test
     void testBasicOperations() {
-        assertEquals(5, calculator.calculate(Operation.ADD, 2, 3));
-        assertEquals(-1, calculator.calculate(Operation.SUBTRACT, 2, 3));
-        assertEquals(6, calculator.calculate(Operation.MULTIPLY, 2, 3));
+        assertEquals(5L, calculator.calculate(Operation.ADD, 2, 3));
+        assertEquals(-1L, calculator.calculate(Operation.SUBTRACT, 2, 3));
+        assertEquals(6L, calculator.calculate(Operation.MULTIPLY, 2, 3));
         assertEquals(0.5, calculator.calculate(Operation.DIVIDE, 1, 2));
     }
 
@@ -51,7 +51,7 @@ public class CalculatorTest {
                 .apply(Operation.MULTIPLY, 2)
                 .result();
 
-        assertEquals(16, result);
+        assertEquals(16L, result);
     }
 
     @Test
