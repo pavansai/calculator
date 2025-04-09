@@ -141,3 +141,19 @@ docker-compose down
    - Registering the implementation with the `OperationRegistry`
 
 4. **IoC Compatibility**: The calculator follows dependency injection principles, making it suitable for use in IoC containers.
+
+5. **Complexity Analysis**
+
+**Core Operations**
+Basic arithmetic operations (ADD, SUBTRACT, MULTIPLY, DIVIDE): O(1) - Constant time for primitive number types
+BigDecimal operations: O(n) - Where n is the number of digits in the operands
+Operation lookup in registry: O(1) - Uses HashMap for constant-time lookups
+Validation checks: O(1) - All validation checks are constant time
+
+**Calculation Chain**
+
+Single operation in chain: O(1) - Same as individual operation
+Complete chain execution: O(n) - Where n is the number of operations in the chain
+
+**Memory Usage**
+The calculator uses minimal memory for basic operations. For operation chaining, memory usage is O(1) as it only maintains the current value regardless of chain length.
