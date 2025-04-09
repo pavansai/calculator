@@ -24,8 +24,8 @@ public class Main {
 
 
         Number result = calculator.chain(5)
-                .apply(Operation.ADD, 3)      // 5 + 3 = 8
-                .apply(Operation.MULTIPLY, 2) // 8 * 2 = 16
+                .apply(Operation.ADD, 3)
+                .apply(Operation.MULTIPLY, 2)
                 .result();
 
         System.out.println("5 + 3 * 2 = " + result);
