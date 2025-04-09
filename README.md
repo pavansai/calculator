@@ -142,7 +142,7 @@ docker-compose down
 
 4. **IoC Compatibility**: The calculator follows dependency injection principles, making it suitable for use in IoC containers.
 
-5. **Complexity Analysis**
+**Complexity Analysis****
 
 **Core Operations**
 Basic arithmetic operations (ADD, SUBTRACT, MULTIPLY, DIVIDE): O(1) - Constant time for primitive number types
